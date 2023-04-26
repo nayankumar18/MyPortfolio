@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+       <img src="https://wallpaperaccess.com/full/8901670.png" class="logo">
+        <ul id="sidemenu">
+            
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+    <div class="header-text">
+      <p>Full-Stack Developer (MERN Stack)</p>
+      <h1>Hi, I'm <span>Nayan Kumar C N </span><br> From Bangalore</h1>
+    </div>
+  </div>
+</div>
+
+<!-- ----------About-----------  -->
+<div id="About">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="D:\Git projects\portfolio\images\Nayanpic1.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>My name is Nayan Kumar C N, I am a self taught developer,having good knowledge in FrontEnd and basic in BackEnd.
+          I worked on multiple core technology like HTML, CSS, javascript, Nodejs, Node(Express), ReactJs, Bootstrap, Python and SQLite.
+          interest in learning more web technology and web Development.I am participating and doing more projects to get hand-on experience.
+        </p>
+      
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+              <li><span>Python language</span><br>Basic Problems Solving</li>
+              <li><span>web Development</span><br>FrontEnd and BackEnd</li>
+              <li><span>JavaScript</span><br>Basic Problems Solving</li>
+          </ul>
+        </div>       
+        <div class="tab-contents" id="experience">
+          <ul>
+              <li><span>Fresher</span><br></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+              <li><span>Engineering</span><br>Impact College of Engineering and applied sciences, Bangalore</li>
+              <li><span>PUC</span><br>Sarada Vilas Pu college, Mysore</li>
+              <li><span>SSLC (10th)</span><br>Adarsha Vidyalaya (RMSA), H.D.Kote</li>
+          </ul>
+        </div>        
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- --------------Services------------------ -->
+<div id="services">
+ <div class="container">
+  <h1 class=""sub-title>My Services</h1>
+  <div class="services-list">
+     <div>
+      <i class="fa fa-code"></i>
+      <h2>FrontEnd Web Design</h2>
+        <p>Front-end web development is the development of the graphical user interface of a website,
+          through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.</p>
+        <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa fa-crop-alt"></i>
+          <h2>REST API's</h2>
+            <p>A REST API, or Representational State Transfer API, is a type of web API that allows communication between different software applications over the internet. It follows a set of architectural principles that define how data should be transmitted over HTTP. REST APIs use HTTP requests to access and manipulate data, which can be in the form of JSON, XML, or other formats.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa fa-app-store"></i>
+              <h2>BackEnd Technologies</h2>
+                <p>MERN stack is a popular technology stack used for web development that consists of four key components: MongoDB, Express, React, and Node.js. MongoDB is a NoSQL database that allows for flexible and scalable data storage, while Express is a web application framework that enables building of RESTful APIs. </p>
+                <a href="#">Learn more</a>
+                </div>
+  </div>
+ </div>
+</div>
+<!-- ----------portfolio--------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+      <img src="https://w0.peakpx.com/wallpaper/273/573/HD-wallpaper-wikipedia-media-widescreen-logo-awesome-black-wiki-useful.jpg">
+      <div class="layer">
+        <h3>Wikipedia clone</h3>
+        <p>Developed custom wikipedia search application where user can search and view curated results and can see
+			detailed explanation in wikipedia by clicking on the specific result
+      <h6>Technologies used: HTML, CSS, JS, REST API Calls, Bootstrap</h6></p>
+          <a href="http://wikipediank.ccbp.tech/"><i class="fa fa-external-link-alt"></i></a>
+      </div>
+     </div>
+     <div class="work">
+      <img src="https://media.istockphoto.com/id/1285308242/photo/to-do-list-text-on-notepad.jpg?b=1&s=170667a&w=0&k=20&c=xAUt6BWO1oyibsevhrqjfNH_etMfz3oOQESJCkn0H3Y=">
+      <div class="layer">
+        <h3>TodoList</h3>
+        <p>Developed persistent todo application with CRUD operations to track list of tasks <br>
+		Displayed list of todos with HTML list elements, styled todo list using CSS, Bootstrap
+		<h6>Technologies used: HTML, CSS, JS, Bootstrap</h6></p>
+          <a href="http://todoappnk.ccbp.tech/"><i class="fa fa-external-link-alt"></i></a>
+      </div>
+        </div>
+      <div class="work">
+        <img src="https://wallpaperaccess.com/full/766605.jpg">
+        <div class="layer">
+          <h3>Country population Search</h3>
+          <p>Developed responsive countries search application which shows all countries and respective population in the
+			world. We can also search by specific country
+			<h6>Technologies used: HTML, CSS, JS, REST API Calls, Bootstrap</h6></p>
+          </p>
+            <a href="http://countrysearchnk.ccbp.tech/"><i class="fa fa-external-link-alt"></i></a>
+        </div>
+         </div>
+
+    </div>
+    <a href="https://github.com/nayankumar18" class="btn">See More</a>
+  </div>
+</div>
+<!-- ----------contact---------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa fa-paper-plane"></i>nayankumarcn7@gmail.com</p>
+        <p><i class="fa fa-phone-square-alt"></i>9380595385</p>
+        <div class="social-icons">
+          <a href="https://twitter.com/NayanKumarCN1?t=n0wj47KwwJfDvhYkDU9TXg&s=09"><i class="fa fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/in/nayan-kumar-c-n-72210421a"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/nayankumar18"><i class="fa fa-github"></i></a>
+        </div>
+        <a href="C:\Users\Nayan\Downloads\Resume nw.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">`
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="your email" required>
+          <textarea name="Message"  rows="6" aria-placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright received from <i class="fa fa-heart"></i>Nayan Kumar C N</p>
+  </div>
+</div>
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links"); 
+   var tabcontents = document.getElementsByClassName("tab-contents");
+  
+   function opentab(tabname){
+    for(tablink of tablinks){
+       tablink.classList.remove("active-link"); 
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+
+   }
+
+
+</script>
+
+<script>
+   
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px"
+    }
+
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxRuFxaukzqTSixbjNpER6TPu_Ba8A2k8zznPSHARInbjQi4y1t3-BFD_3gWLzClAfk/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
